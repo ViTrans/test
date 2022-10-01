@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+.container {
+  padding: 100px 62px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.features-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 20px;
+  border: 1px solid black;
+  gap: 15px;
+}
+.features-item-top {
+  font-size: 50px;
+}
+.features-item-content {
+  font-size: 22px;
+}
+.features-item-desc {
+  text-align: center;
+}
+.feature-btn {
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border: 1px solid black;
+  display: block;
+  margin: 40px auto;
+}
+@media screen and (max-width: 767.98px) {
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+}
